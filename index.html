@@ -308,7 +308,7 @@
               <div class="watermark">
                 Sample    Sample   
               </div>
-              <img src="https://drive.google.com/uc?id=1eQEksx5PcIIVre-qvGvGSh3r7QI4V6qa" class="w-100 d-inline col" frameborder="0" width="100%" height="auto" />
+              <img id="image1" src="" class="w-100 d-inline col" frameborder="0" width="100%" height="auto" />
             </div>
           </div>
           <div class="modal-footer d-flex justify-content-center">
@@ -328,7 +328,7 @@
               <div class="watermark">
                 Sample    Sample   
               </div>
-              <img src="https://drive.google.com/uc?id=13B5aEC1mII8LddhjL6dz1hkJ_t43he5L" class="w-100 d-inline col" frameborder="0" width="100%" height="auto" />
+              <img  id="image2" src="" class="w-100 d-inline col" frameborder="0" width="100%" height="auto" />
             </div>
           </div>
           <div class="modal-footer d-flex justify-content-center">
@@ -348,7 +348,7 @@
               <div class="watermark">
                 Sample    Sample   
               </div>
-              <img src="https://drive.google.com/uc?id=1TYx_kP2SzA3gfhtwfoEMTI5ofBLG3Pue" class="w-100 d-inline col" frameborder="0" width="100%" height="auto" />
+              <img id="image3" src="" class="w-100 d-inline col" frameborder="0" width="100%" height="auto" />
             </div>
           </div>
           <div class="modal-footer d-flex justify-content-center">
@@ -362,7 +362,20 @@
     
     
   </div>
+  <script>
+    // Generate a random cachebuster value
+    var cachebuster = Math.floor(Math.random() * 1000000);
 
+    // Get the image elements
+    var image1Element = document.getElementById("image1");
+    var image2Element = document.getElementById("image2");
+    var image3Element = document.getElementById("image3");
+
+    // Update the image sources with the cachebuster value
+    image1Element.src = "https://drive.google.com/uc?id=1eQEksx5PcIIVre-qvGvGSh3r7QI4V6qa&cachebuster=" + cachebuster;
+    image2Element.src = "https://drive.google.com/uc?id=13B5aEC1mII8LddhjL6dz1hkJ_t43he5L&cachebuster=" + cachebuster;
+    image3Element.src = "https://drive.google.com/uc?id=1TYx_kP2SzA3gfhtwfoEMTI5ofBLG3Pue&cachebuster=" + cachebuster;
+  </script>
 </body>
 
 </html>
