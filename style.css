@@ -1,17 +1,8 @@
-/* Add your custom CSS styles here */
-/* Animation for section fade-in */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Space+Grotesk&display=swap');
 * {
 font-family: 'Space Grotesk', sans-serif;
 }
 
-body {
-  cursor: url('https://nirnejak.com/_next/static/media/circle.8f6fa399.svg'), auto;
-}
-
-/* body {
-  cursor: url('cursor3.svg'), auto;
-} */
 
 .fade-in {
     opacity: 0;
@@ -216,4 +207,5 @@ body {
   }
   
   
+
   
