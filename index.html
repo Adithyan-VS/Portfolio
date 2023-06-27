@@ -10,9 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
-  <style>
 
-  </style>
 </head>
 
 <body>
@@ -181,65 +179,7 @@
     <section id="projects" class="py-5 fade-in" style="background-color: #333">
       <div class="container">
         <h2 class="d-flex justify-content-center">Projects ⭐</h2>
-        <!-- <div class="myCard">
-          <div class="card m-2" style="background-color: #444">
-            <div class="card-body">
-              <h3 class="card-title mb-4">Coding Quiz Website</h3>
-              <p class="card-text">
-                Developed a dynamic Coding quiz application using HTML, CSS, PHP, and JavaScript, featuring a progress
-                bar, score
-                tracker,
-                and local storage for saving scores with player names. Leveraged MySQL server for efficient data storage
-                and retrieval,
-                ensuring seamless performance and enhanced user experience. The application provides an engaging and
-                interactive
-                platform for users to test their knowledge. Responsive design principles were implemented to optimize
-                the application
-                for various devices, ensuring a consistent experience.
-                the Quiz Application delivers an intuitive user interface, reliable data storage, and a captivating quiz
-                experience.
-              </p><br>
-            </div>
-            <a href="https://codingquiz.epizy.com" target="_blank" class="stretched-link"></a>
-          </div>
-          <div class="card m-2" style="background-color: #444">
-            <div class="card-body">
-              <h3 class="card-title mb-4">Service Management System</h3>
-              <p class="card-text">
-                This project involved the development of a robust web portal for seamless service request and engineer
-                assignment. The system aimed to streamline the service request process, optimize engineer allocation,
-                and provide efficient tracking and communication. Technologies such as HTML, CSS, JavaScript, PHP,
-                MySQL, and Bootstrap were utilized to create an enhanced user experience in service management.
-                Customers could easily submit service requests, while the company could effectively assign engineers
-                based on the specific requirements. The system facilitated smooth tracking of service status and enabled
-                seamless communication between customers, engineers, and the company, ensuring a streamlined service
-                management process.
-              </p><br>
-
-            </div>
-            <a href="https://github.com/Adithyan-VS/Service-Management-System-Project" target="_blank"
-              class="stretched-link"></a>
-          </div>
-
-
-          <div class="card m-2" style="background-color: #444">
-            <div class="card-body">
-              <h3 class="card-title mb-4">Car Rental Management System</h3>
-              <p class="card-text">
-                Developed a user-friendly Car Rental Management System using MySQL and the VB .NET framework. The system
-                efficiently manages car inventory, customer details, and rental transactions. It utilizes a MySQL
-                database for data storage and retrieval. The application's intuitive Windows Forms interface ensures
-                easy navigation and interaction. Real-time data synchronization and updates are achieved through
-                integration with the MySQL.Data.MySqlClient library. This Car Rental Management System automates and
-                streamlines car
-                rental operations, providing a reliable solution for optimized performance and an effortless user
-                experience.
-              </p>
-            </div>
-            <a href="https://github.com/Adithyan-VS/Car-Rental-Management-System" target="_blank"
-              class="stretched-link"></a>
-          </div>
-        </div> -->
+        
         <div class="row">
           <!-- Project 1 -->
           <div class="col-lg-4 mb-4">
@@ -251,12 +191,12 @@
               </p>
               </p>
               <div class="d-flex justify-content-center mt-3">
-                <button class="cta-button btn bg-transparent text-light" id="my_btn1"
-                  onclick="toggleProjectDetails('project1','my_btn1')">Learn More ...</button>
+                <div class="cta-button btn bg-transparent text-light" id="my_btn1"
+                  onclick="toggleProjectDetails('project1','my_btn1')">Learn More ...</div>
 
               </div>
 
-              <div id="project1-details" class="project-details mt-4">
+              <div id="project1-details" class="project-details mt-4" style="display: none;">
                 <div id="project1-carousel" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -300,9 +240,9 @@
                   <li>HTML, CSS, and JavaScript for front-end development</li>
                   <li>PHP and MySQL server for efficient data storage and retrieval</li>
                 </ul><br>
-                <ul style="list-style: none; display: flex; justify-content: center;">
-                  <li><a href="https://codingquiz.epizy.com/" >Project Link</a></li>
-                </ul>
+                <div style="list-style: none; display: flex; justify-content: center;">
+                  <p><a href="https://codingquiz.epizy.com/" >Project Link</a></p>
+                </div>
               </div>
             </div>
           </div>
@@ -323,7 +263,7 @@
 
               </div>
 
-              <div id="project2-details" class="project-details mt-4">
+              <div id="project2-details" class="project-details mt-4" style="display: none;">
                 <div id="project2-carousel" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -370,9 +310,9 @@
                   <li>MySQL database for data storage</li>
                   <li>Bootstrap framework for responsive design</li>
                 </ul><br>
-                <ul style="list-style: none; display: flex; justify-content: center;">
-                  <li><a href="https://github.com/Adithyan-VS/Service-Management-System-Project" >Project Link</a></li>
-                </ul>
+                <div style="list-style: none; display: flex; justify-content: center;">
+                  <p><a href="https://github.com/Adithyan-VS/Service-Management-System-Project" >Project Link</a></p>
+                </div>
 
               </div>
             </div>
@@ -392,7 +332,7 @@
                   onclick="toggleProjectDetails('project3','my_btn3')">Learn More ...</button>
               </div>
 
-              <div id="project3-details" class="project-details mt-4">
+              <div id="project3-details" class="project-details mt-4" style="display: none;">
                 <div id="project3-carousel" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -431,20 +371,20 @@
                 <h4 class="project-subtitle mt-2">Key Features:</h4>
                 <ul class="project-features">
 
-                  <li> User-friendly interface for service requests</li>
-                  <li>Efficient engineer assignment based on requirements</li>
-                  <li>Real-time service status tracking</li>
-                  <li>Seamless communication between users, engineers, and the company</li>
-                  <li>Efficient data storage and retrieval using MySQL server</li>
+                  <li>Interactive card manipulation and data alteration.</li>
+                  <li>Easy setup with all code and assets in a single HTML file.</li>
+                  <li>Engaging user interface with animations and hover effects.</li>
+                  <li>Dynamic column organization for easy categorization.</li>
+
                 </ul>
                 <h4 class="project-subtitle">Technologies Used:</h4>
                 <ul class="technology-list">
                   <li>HTML, CSS, JavaScript for front-end</li>
                   <li>Bootstrap framework for responsive design</li>
                 </ul><br>
-                <ul style="list-style: none; display: flex; justify-content: center;">
-                  <li><a href="https://github.com/Adithyan-VS/Pricing_page_design" >Project Link</a></li>
-                </ul>
+                <div style="list-style: none; display: flex; justify-content: center;">
+                  <p><a href="https://github.com/Adithyan-VS/Pricing_page_design" >Project Link</a></p>
+                </div>
               </div>
             </div>
           </div>
