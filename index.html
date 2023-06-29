@@ -22,13 +22,6 @@
         document.getElementById('projects').innerHTML = html;
       });
 
-    //fetch the html from mymodal.html and adds in the section tag with id myModal
-    fetch('src/mymodal.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('myModal').innerHTML = html;
-      });
-
     //fetch the html from contact.html and adds in the section tag with id contact
     fetch('src/contact.html')
       .then(response => response.text())
@@ -220,6 +213,14 @@
   <div class="myModal" id="myModal">
     <!-- Code in mymodal.html -->
   </div>
+  <script>
+    //fetch the html from mymodal.html and adds in the section tag with id myModal
+    fetch('src/mymodal.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('myModal').innerHTML = html;
+      });
+  </script>
   <script>
     const list = document.getElementById('list');
     const showMoreBtn = document.getElementById('showMoreBtn');
